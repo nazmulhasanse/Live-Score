@@ -1,0 +1,5 @@
+{
+  "name": "Copy of AI Cricket Commentary",
+  "description": "A live cricket scoreboard with AI-generated commentary using the Gemini API.",
+  "requestFramePermissions": []
+}

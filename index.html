@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Cricket Commentary</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@700&display=swap">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="app-container">
+        <header>
+            <h1>AI Cricket Commentary</h1>
+        </header>
+        <main>
+            <section id="scoreboard">
+                <div class="team-name">TEAM GEMINI</div>
+                <div class="score-display">
+                    <span id="runs">0</span>-<span id="wickets">0</span>
+                </div>
+                <div class="overs-display">
+                    Overs: <span id="overs">0.0</span>
+                </div>
+            </section>
+            <section id="commentary-container" aria-live="polite" aria-atomic="false">
+                <div class="commentary-box">
+                    <p class="commentary-item welcome">Welcome to the match! Click "Bowl Next Ball" to start the action.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <button id="next-ball-button" aria-label="Bowl next ball">
+                Bowl Next Ball
+            </button>
+        </footer>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/genai": "https://esm.sh/@google/genai"
+        }
+      }
+    </script>
+    <script type="module" src="index.tsx"></script>
+</body>
+</html>
